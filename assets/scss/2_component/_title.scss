@@ -1,0 +1,112 @@
+/*------------------------------------------------------------
+.c-maintitle1
+------------------------------------------------------------*/
+.c-maintitle1{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	height:260px;
+	text-align: center;
+	min-width:950px;
+	width:100%;
+	h2{
+		@include setFont(3.6rem,#f2f1d8,400,$font-mincho)
+	}
+	span{
+		@include setFont(1.8rem,#f2f1d8)
+		display:block;
+	}
+}
+/* .c-title1
+------------------------------------------------------------*/
+.c-title1{
+	text-align: center;
+	h2{
+		@include setFont(3.4rem,#640000,500,$font-mincho)
+	}
+	span{
+		display:block;
+		@include setFont(2rem,#a50000,400,$font-mincho)
+	}
+}
+/* .c-title2
+------------------------------------------------------------*/
+.c-title2{
+	h3{
+		@include setFont(2.2rem,#640000,400,$font-meiryo)
+		padding:36px 0;
+		border:1px solid #a50000;
+		border-width:1px 0 1px 0;
+	}
+}
+/* .c-title3
+------------------------------------------------------------*/
+.c-title3{
+	text-align: center;
+	padding:30px 0;
+	border:1px solid #a50000;
+	border-width:1px 0 1px 0;
+	@include clearfix;
+	&__img{
+		display:inline-block;
+		img{
+			vertical-align:bottom;
+		}
+	}
+	&__text{
+		display:inline-block;
+		h3{
+			@include setFont(2.4rem,#640000,400,$font-gothic)
+		}
+	}
+}
+/* .c-title4
+------------------------------------------------------------*/
+.c-title4{
+	text-align: center;
+	h3{
+		@include setFont(3.4rem,#640000,500,$font-mincho)
+	}
+}
+/* .c-title5
+------------------------------------------------------------*/
+.c-title5{
+	span{
+		@include setFont(2.2rem,#640000,500,$font-mincho)
+	}
+}
+/* .c-title6
+------------------------------------------------------------*/
+.c-title6{
+	h2{
+		@include setFont(1.6rem,#a50000,bold,$font-meiryo)
+	}
+}
+/* .c-title7
+------------------------------------------------------------*/
+.c-title7{
+	h2{
+		@include setFont(1.4rem,#a50000,bold,$font-meiryo)
+	}
+}
+/* .c-title100
+------------------------------------------------------------*/
+.c-title100{
+	text-align: center;
+	&__text{
+		display:inline-block;
+		text-align: center;
+		h3{
+			@include setFont(3.4rem,#a50000,500,$font-mincho)
+		}
+		span{
+			display:block;
+			@include setFont(2rem,#a50000,400,$font-mincho)
+		}
+	}
+	&__btn{
+		display:inline-block;
+		vertical-align: top;
+		margin-left:30px;
+	}
+}

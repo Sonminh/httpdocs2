@@ -1,0 +1,122 @@
+/*------------------------------------------------------------
+.c-mainvisual
+------------------------------------------------------------*/
+.c-mainvisual{
+	text-align: center;
+	background: #512121;
+}
+
+/*.c-info1
+------------------------------------------------------------*/
+.c-info1{
+	padding:22px;
+	width:538px;
+	background: #dfdfd0;
+	.c-info-1__title{
+		@include setFont(1.4rem,#a50000,bold,$font-meiryo)
+	}
+	.c-info-1__list{
+		li{
+			@include setFont(1.4rem,#000000,400,$font-meiryo)
+			line-height:21px;
+			&:before{
+				content:"";
+				display:inline-block;
+				width:5px;
+				height:5px;
+				background:#a50000;
+				margin-right:8px;
+			}
+		}
+	}
+}
+/*.c-info2
+------------------------------------------------------------*/
+.c-info2{
+	height:82px;
+	width:360px;
+	display:flex;
+	align-items:center;
+	background: #dfdfd0;
+	justify-content:center;
+	h3{
+		@include setFont(1.4rem,#000000,bold,$font-meiryo)
+	}
+	span{
+		display:block;
+		@include setFont(1.4rem,#000000,400,$font-meiryo)
+	}
+}
+/*.c-info2--color
+------------------------------------------------------------*/
+.c-info2--color{
+	background: #FFFFFF;
+}
+/*.c-info3
+------------------------------------------------------------*/
+.c-info3{
+	border:1px solid #cdcbaf;
+	@include border-box;
+	padding:40px 53px;
+	@include clearfix;
+	.c-info3__contact{
+		float:left;
+		padding-right:45px;
+		h3{
+			@include setFont(2rem,#3b2e1d,400,$font-gothic)
+		}
+		p{
+			@include setFont(1.6rem,#3b2e1d,400,$font-gothic)
+		}
+		img{
+			padding-top:20px;
+		}
+
+	}
+	.c-info3__list{
+		float:left;
+		padding-left:45px;
+		border-left:1px solid #ceccae;
+		li{
+			padding-bottom:17px;
+			@include setFont(1.4rem,#640000,400,$font-gothic)
+			img{
+				margin-right:15px;
+			}
+		}
+	}
+}
+/*.c-mapBlock
+------------------------------------------------------------*/
+.c-mapBlock{
+	&__title{
+		a{
+			display:block;
+			@include setFont(1.4rem,#0000ff,400,$font-meiryo)
+			text-decoration: underline !important;
+			padding:11px 0 27px 0;
+		}
+	}
+	&__note{
+		padding-top:27px;
+		@include setFont(1.4rem,#000000,400,$font-meiryo)
+	}
+
+}
+/*.c-gotop
+------------------------------------------------------------*/
+.c-gotop{
+	position:fixed;
+	bottom:100px;
+	right:50px;
+	a{
+		display:block;
+	}
+}
+/*.c-text1
+------------------------------------------------------------*/
+.c-text1{
+	p{
+		@include setFont(1.395rem,#000000,400,$font-meiryo)
+	}
+}

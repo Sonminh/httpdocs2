@@ -1,0 +1,81 @@
+/*------------------------------------------------------------
+header
+------------------------------------------------------------*/
+.l-header{
+	//.c-header1
+	.c-header1{
+		min-width:950px;
+		width:100%;
+		background:#640000;
+		border-bottom: 1px solid #7a0000;
+		p{
+			padding:5px 0 7px 0;
+			@include setFont(12px,#ffffff,400,$font-meiryo)
+		}
+	}
+	//.c-header2
+	.c-header2{
+		min-width:950px;
+		width:100%;
+		background:#640000;
+		.l-container{
+			@include clearfix;
+		}
+		.header__logo{
+			float:left;
+			padding:15px 0;
+		}
+		.header__contact{
+			float:right;
+		}
+		.header__text{
+			display:inline-block;
+			vertical-align:middle;
+			padding:30px 15px 30px 0;
+			@include setFont(14px,#ffffff,400,$font-gothic)
+		}
+		.header__img{
+			display:inline-block;
+		}
+		.header__info{
+			display:inline-block;
+			img{
+				vertical-align:middle;
+			}
+		}
+	}
+	//.c-gnav
+	.c-gnav{
+		min-width:950px;
+		width:100%;
+		background:#b20000;
+		border-bottom:4px solid #cdb140;
+		ul{
+			@include clearfix;
+		}
+		li{
+			float:left;
+			border : 1px solid #750000;
+			border-width:0 0px 0 1px;
+			@include border-box;
+			@include setTextHover(#f2f1d9 ,#cdb140)
+			&:last-child{
+				border-right:1px solid #750000;
+			}
+		}
+		a{
+			height:60px;
+			display:table-cell;
+			vertical-align:middle;
+			padding:0px 30px;
+			text-align: center;
+			@include setFont(14px,#f2f1d9,400,$font-gothic)
+			&:hover{
+				background: #640000;
+			}
+		}
+	}
+}
+
+/*
+------------------------------------------------------------*/

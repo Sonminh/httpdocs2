@@ -1,0 +1,38 @@
+/*------------------------------------------------------------
+.c-list1
+------------------------------------------------------------*/
+.c-list1{
+	li{
+		&:before{
+			content:url('../image/common/icon_17.png');
+			display:inline-block;
+		}
+	}
+	a{
+		display:inline-block;
+		@include setFont(1.4rem,#000000,400,$font-meiryo)
+	}
+}
+
+/*.c-list2
+------------------------------------------------------------*/
+.c-list2{
+	li{
+		padding:35px 0;
+		border-top:1px solid #bbbbbb;
+		&:last-child{
+			border-bottom:1px solid #bbbbbb;
+		}
+	}
+	p{
+		@include setFont(1.4rem,#000000,400,$font-meiryo)
+	}
+	span{
+		margin-right:24px;
+		@include setFont(1.4rem,#a50000,400,$font-meiryo)
+		&:before{
+		content:url('../image/common/icon_18.png');
+		margin-right:20px;
+		}
+	}
+}

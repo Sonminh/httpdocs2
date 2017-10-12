@@ -1,0 +1,86 @@
+/*------------------------------------------------------------
+.c-breadcrumbs
+------------------------------------------------------------*/
+.c-breadcrumbs{
+	background: #dfdfd0;
+	min-width:950px;
+	width:100%;
+	ul.breadcrumbs__path{
+		padding:15px 0;
+	}
+	li{
+		display:inline-block;
+	}
+	a{
+		@include setFont(1.2rem,#a50000,400,$font-meiryo)
+		text-decoration: underline !important;
+		&.active{
+			@include setFont(1.2rem,#000000,400,$font-meiryo)
+			text-decoration: none !important;
+			&:before{
+				content:">";
+			}
+		}
+	}
+}
+/*------------------------------------------------------------
+.c-nav1
+------------------------------------------------------------*/
+.c-nav1{
+	ul{
+		@include clearfix;
+	}
+	li{
+		float:left;
+		width:221px;
+		height:57px;
+		@include border-box;
+		border:1px solid #dfdfd0;
+		margin-right:22px;
+		position:relative;
+		text-align: center;
+		line-height: 57px;
+		&:last-child{
+			margin-right:0px;
+		}
+		&:after{
+			content:"";
+			display:inline-block;
+			border-left: 8px solid transparent;
+				border-right: 8px solid transparent;
+			border-bottom: 8px solid #573733;
+			transform: rotate(135deg);
+			position:absolute;
+			bottom:0px;
+			right:-2px;
+
+		}
+	}
+	a{
+		display:block;
+		height:100%;
+		width:100%;
+		@include setFont(1.4rem,#2b0000,400,$font-gothic)
+	}
+}
+/*------------------------------------------------------------
+.c-nav2
+------------------------------------------------------------*/
+.c-nav2{
+	&__list{
+		@include columnCount(2,30px)
+		@include clearfix;
+	}
+	li{
+		float:left;
+		&:nth-child(odd){
+			margin-bottom:30px;
+		}
+	}
+	a{
+		display:block;
+		img{
+			width:100%;
+		}
+	}
+}

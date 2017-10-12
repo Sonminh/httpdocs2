@@ -1,0 +1,37 @@
+/*------------------------------------------------------------
+.c-table1
+------------------------------------------------------------*/
+.c-table1{
+	table{
+		border-collapse: collapse;
+	}
+	tr{
+		border:1px solid #ceceb7;
+		border-width:1px 0 1px 0;
+		height:48px;
+		+ tr{
+			border-top:none;
+		}
+	}
+	th{
+		background: #dfdfd0;
+		width:240px;
+		padding-left:20px;
+		@include setFont(1.4rem,#000000,bold,$font-meiryo)
+	}
+	td{
+		width:710px;
+		padding-left:20px;
+		@include setFont(1.4rem,#000000,400,$font-meiryo)
+	}
+}
+/* .c-table1--color2
+------------------------------------------------------------*/
+.c-table1--color2{
+	th{
+		background: #ffffff;
+	}
+	td{
+		background: rgba(0,0,0,0);
+	}
+}
